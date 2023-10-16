@@ -1,0 +1,88 @@
+{% extends "app/base.html" %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+
+{% block banner-slider %}
+
+
+{% endblock banner-slider %}
+
+{% block main-content %}
+    <div class="container">
+        <h2 class="text-center">Products</h2>
+        <br><br>
+        <div class="row container">
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+                <div class="goodnesssec buttermilk smbg">
+                    <a href="{%  url 'category' 'CH' %}">
+                        <div class="goodnessseccont text-center">
+                            <img src="{% static 'app/images/shirt.jpg' %}" class="img-responsive" alt="">
+                            <p class="mlkpro">Shirts</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+                <div class="goodnesssec buttermilk smbg">
+                    <a href="{%  url 'category' 'SH' %}">
+                        <div class="goodnessseccont text-center">
+                            <img src="{% static 'app/images/shoes.jpg' %}" class="img-responsive" alt="">
+                            <p class="mlkpro">Shoes</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+                <div class="goodnesssec buttermilk smbg">
+                    <a href="{%  url 'category' 'PT' %}">
+                        <div class="goodnessseccont text-center">
+                            <img src="{% static "app/images/Oppo.jpg" %}" class="img-responsive" alt="">
+                            <p class="mlkpro">Phones</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <br><br>
+        <div class="row container">
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+                <div class="goodnesssec buttermilk smbg">
+                    <a href="{%  url 'category' 'BF' %}">
+                        <div class="goodnessseccont text-center">
+                            <img src="{% static 'app/images/handbag.jpg' %}" class="img-responsive" alt="">
+                            <p class="mlkpro">Handbags</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+                <div class="goodnesssec buttermilk smbg">
+                    <a href="{%  url 'category' 'BK' %}">
+                        <div class="goodnessseccont text-center">
+                            <img src="{% static 'app/images/GC.jpg' %}" class="img-responsive" alt="">
+                            <p class="mlkpro">Books</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+                <div class="goodnesssec buttermilk smbg">
+                    <a href="{%  url 'category' 'EL' %}">
+                        <div class="goodnessseccont text-center">
+                            <img src="{% static "app/images/headphone.jpg" %}" class="img-responsive" alt="">
+                            <p class="mlkpro">headphones</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <br><br>
+    </div>
+{% endblock main-content %}
